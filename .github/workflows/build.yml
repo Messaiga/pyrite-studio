@@ -1,4 +1,4 @@
-name: Build Pyrite
+name: Build Pyrite Studio
 on:
   pull_request:
     branches:
@@ -11,7 +11,7 @@ on:
     paths-ignore:
       - '**/README.md'
 env:
-    IMAGE_NAME: pyrite
+    IMAGE_NAME: pyrite-studio
     IMAGE_TAGS: latest
     IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
@@ -38,7 +38,7 @@ jobs:
           images: |
             ${{ env.IMAGE_NAME }}
           labels: |
-            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/messaiga/pyrite/main/README.md
+            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/messaiga/pyrite-studio/main/README.md
 
       # Build image using Buildah action
       - name: Build Image
