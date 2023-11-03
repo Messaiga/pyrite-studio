@@ -1,15 +1,23 @@
 name: Build Pyrite Studio
 on:
+  schedule:
+    - cron: '0 0 * * TUE'  # Every Tuesday
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: '0 0 * * TUE'
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+  pull_request_review:
+    type: [submitted]
   push:
     branches:
       - main
     paths-ignore:
-      - '**/README.md'
+      - '**.md'
+      - '**.txt'
+  merge_group:
+  workflow_dispatch:
 env:
     IMAGE_NAME: pyrite-studio
     IMAGE_TAGS: latest
