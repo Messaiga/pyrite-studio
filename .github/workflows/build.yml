@@ -1,4 +1,5 @@
 name: Build Pyrite
+on:
   pull_request:
     branches:
       - main
