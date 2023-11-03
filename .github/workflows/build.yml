@@ -1,4 +1,4 @@
-name: build-pyrite
+name: Build Pyrite
   pull_request:
     branches:
       - main
