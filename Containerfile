@@ -2,8 +2,8 @@ FROM ghcr.io/ublue-os/arch-distrobox AS pyrite
 
 # COPY system_files /
 
-# Install audio subsystems
-RUN pacman -S \
+# Install audio subsystems, update mirrors
+RUN pacman -Syu \
         pipewire \
         pipewire-jack \
         pipewire-pulse \
