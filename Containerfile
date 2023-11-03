@@ -1,6 +1,6 @@
 FROM ghcr.io/ublue-os/arch-distrobox AS pyrite
 
-COPY system_files /
+# COPY system_files /
 
 # Install audio subsystems
 RUN pacman -S \
