@@ -21,6 +21,7 @@ RUN pacman -S \
         bespokesynth \
         carla \
         stochas \
+        qpwgraph \
 
 # ---------------------------- #
 
@@ -88,6 +89,7 @@ RUN paru -S \
 
 # DAW
         aur/raysession \
+        aur/pipecontrol \
 
 #       aur/zrythm \            Build error, needs override params, fix later
 
