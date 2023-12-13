@@ -25,7 +25,7 @@ RaySession relies on OSC (Open Sound Control), which relies on the localhost add
 
 1. After the image has downloaded, `distrobox-enter pyrite-studio` and run `hostname`.
 
-2. Take the output of `hostname` and append it to the first loopback entry of /etc/hosts
+2. Take the output of `hostname` and append it to the first loopback entry of /etc/hosts in your host environment.
 
 Before: `127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4`
 
