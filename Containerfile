@@ -100,10 +100,11 @@ RUN paru -S \
         aur/swh-lv2-git \
         aur/tap-plugins-lv2-git \
 
-#B Plugs
-        aur/bjumblr.lv2-git \
-        aur/boops.lv2-git \
-        aur/bschaffl.lv2-git \
+#B Plugs \ Causing build to fail, wait for 24.04 GH runner
+#        aur/bjumblr.lv2-git \
+#        aur/boops.lv2-git \
+#        aur/bschaffl.lv2-git \
+#
 
 # Instruments
         # vital-synth \        Building without for now, try later
